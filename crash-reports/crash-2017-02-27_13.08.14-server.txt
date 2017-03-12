@@ -1,0 +1,70 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2/27/17 1:08 PM
+Description: Exception ticking world
+
+java.lang.IllegalStateException: TickNextTick list out of synch
+	at net.minecraft.world.WorldServer.tickUpdates(WorldServer.java:731)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:225)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:783)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:698)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:547)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.world.WorldServer.tickUpdates(WorldServer.java:731)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:225)
+
+-- Affected level --
+Details:
+	Level name: TestWorld
+	All players: 1 total; [EntityPlayerMP['Player285'/164, l='TestWorld', x=-1631.07, y=47.00, z=-379.89]]
+	Chunk stats: ServerChunkCache: 1466 Drop: 0
+	Level seed: 7881154876610940225
+	Level generator: ID 04 - customized, ver 0. Features enabled: true
+	Level generator options: {"coordinateScale":684.412,"heightScale":684.412,"lowerLimitScale":512.0,"upperLimitScale":512.0,"depthNoiseScaleX":200.0,"depthNoiseScaleZ":200.0,"depthNoiseScaleExponent":0.5,"mainNoiseScaleX":80.0,"mainNoiseScaleY":160.0,"mainNoiseScaleZ":80.0,"baseSize":8.5,"stretchY":6.6988034,"biomeDepthWeight":1.0,"biomeDepthOffset":0.0,"biomeScaleWeight":1.0,"biomeScaleOffset":0.0,"seaLevel":31,"useCaves":true,"useDungeons":true,"dungeonChance":67,"useStrongholds":true,"useVillages":true,"useMineShafts":true,"useTemples":true,"useMonuments":true,"useMansions":true,"useRavines":true,"useWaterLakes":true,"waterLakeChance":4,"useLavaLakes":true,"lavaLakeChance":80,"useLavaOceans":true,"fixedBiome":-1,"biomeSize":4,"riverSize":4,"dirtSize":26,"dirtCount":10,"dirtMinHeight":0,"dirtMaxHeight":79,"gravelSize":20,"gravelCount":5,"gravelMinHeight":0,"gravelMaxHeight":89,"graniteSize":15,"graniteCount":3,"graniteMinHeight":0,"graniteMaxHeight":80,"dioriteSize":1,"dioriteCount":0,"dioriteMinHeight":0,"dioriteMaxHeight":80,"andesiteSize":33,"andesiteCount":10,"andesiteMinHeight":0,"andesiteMaxHeight":80,"coalSize":17,"coalCount":20,"coalMinHeight":0,"coalMaxHeight":128,"ironSize":9,"ironCount":20,"ironMinHeight":0,"ironMaxHeight":64,"goldSize":9,"goldCount":2,"goldMinHeight":0,"goldMaxHeight":32,"redstoneSize":8,"redstoneCount":8,"redstoneMinHeight":0,"redstoneMaxHeight":16,"diamondSize":8,"diamondCount":6,"diamondMinHeight":0,"diamondMaxHeight":255,"lapisSize":7,"lapisCount":1,"lapisCenterHeight":16,"lapisSpread":16}
+	Level spawn location: World: (-180,32,256), Chunk: (at 12,2,0 in -12,16; contains blocks -192,0,256 to -177,255,271), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 11802 game time, 11802 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 117863 (now: false), thunder time: 147534 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:783)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:698)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:547)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11.2
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 415493360 bytes (396 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.38 Powered by Forge 13.20.0.2228 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	minecraft{1.11.2} [Minecraft] (minecraft.jar) 
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.11.2-13.20.0.2228.jar) 
+	UCHIJAAAA	forge{13.20.0.2228} [Minecraft Forge] (forgeSrc-1.11.2-13.20.0.2228.jar) 
+	UCHIJAAAA	ninjacraft{@VERSION@} [Ninjacraft ] (bin) 
+	UCHIJAAAA	examplemod{1.0} [Example Mod] (bin) 
+	UCHIJAAAA	ism{1.5.11 MC-1.1.11} [Instant Structures Mod (ISM)] (ism-1.5.11 MC-1.11.jar) 
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player285'/164, l='TestWorld', x=-1631.07, y=47.00, z=-379.89]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

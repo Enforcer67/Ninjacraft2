@@ -1,0 +1,47 @@
+---- Minecraft Crash Report ----
+// Ouch. That hurt :(
+
+Time: 3/6/17 4:37 PM
+Description: Exception in server tick loop
+
+java.lang.NullPointerException: Exception in server tick loop
+	at de.bitowner.ninjacraft.biomes.DarkBiome.decorate(DarkBiome.java:63)
+	at net.minecraft.world.gen.ChunkProviderOverworld.populate(ChunkProviderOverworld.java:464)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1069)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1052)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:164)
+	at net.minecraft.server.MinecraftServer.initialWorldChunkLoad(MinecraftServer.java:340)
+	at net.minecraft.server.integrated.IntegratedServer.loadAllWorlds(IntegratedServer.java:107)
+	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:124)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:507)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11.2
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 343239584 bytes (327 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.38 Powered by Forge 13.20.0.2228 8 mods loaded, 8 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAAAAA	minecraft{1.11.2} [Minecraft] (minecraft.jar) 
+	UCHIJAAAAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.11.2-13.20.0.2228.jar) 
+	UCHIJAAAAAAA	forge{13.20.0.2228} [Minecraft Forge] (forgeSrc-1.11.2-13.20.0.2228.jar) 
+	UCHIJAAAAAAA	ninjacraft{@VERSION@} [Ninjacraft ] (bin) 
+	UCHIJAAAAAAA	examplemod{1.0} [Example Mod] (bin) 
+	UCHIJAAAAAAA	ism{1.5.11 MC-1.1.11} [Instant Structures Mod (ISM)] (ism-1.5.11 MC-1.11.jar) 
+	UCHIJAAAAAAA	jei{4.2.4.226} [Just Enough Items] (jei_1.11.2-4.2.4.226.jar) 
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

@@ -1,0 +1,44 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 2/27/17 1:20 PM
+Description: Exception in server tick loop
+
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1437)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1461)
+	at net.minecraft.entity.EntityTracker.tick(EntityTracker.java:293)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:806)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:698)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:547)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11.2
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 499466816 bytes (476 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 1, tcache: 1, allocated: 12, tallocated: 94
+	FML: MCP 9.38 Powered by Forge 13.20.0.2228 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAAAAAAAAAAAAAAAAAAAAAAAAAAA	minecraft{1.11.2} [Minecraft] (minecraft.jar) 
+	UCHIJAAAAAAAAAAAAAAAAAAAAAAAAAAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAAAAAAAAAAAAAAAAAAAAAAAAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.11.2-13.20.0.2228.jar) 
+	UCHIJAAAAAAAAAAAAAAAAAAAAAAAAAAAAA	forge{13.20.0.2228} [Minecraft Forge] (forgeSrc-1.11.2-13.20.0.2228.jar) 
+	UCHIJAAAAAAAAAAAAAAAAAAAAAAAAAAAAA	ninjacraft{@VERSION@} [Ninjacraft ] (bin) 
+	UCHIJAAAAAAAAAAAAAAAAAAAAAAAAAAAAA	examplemod{1.0} [Example Mod] (bin) 
+	UCHIJAAAAAAAAAAAAAAAAAAAAAAAAAAAAA	ism{1.5.11 MC-1.1.11} [Instant Structures Mod (ISM)] (ism-1.5.11 MC-1.11.jar) 
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player869'/44774, l='TestWW', x=1035.84, y=100.00, z=-1821.88]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

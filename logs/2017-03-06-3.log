@@ -1,0 +1,222 @@
+[16:29:20] [Client thread/INFO]: Setting user: Player534
+[16:29:23] [Client thread/WARN]: Skipping bad option: lastServer:
+[16:29:23] [Client thread/INFO]: LWJGL Version: 2.9.4
+[16:29:23] [Client thread/INFO]: [STDOUT]: ---- Minecraft Crash Report ----
+// On the bright side, I bought you a teddy bear!
+
+Time: 3/6/17 4:29 PM
+Description: Loading screen debug info
+
+This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11.2
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 879903056 bytes (839 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel' Version: '4.4.0 - Build 21.20.16.4565' Renderer: 'Intel(R) HD Graphics 530'
+[16:29:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Ninjacraft , FMLFileResourcePack:Example Mod, FMLFileResourcePack:Instant Structures Mod (ISM), FMLFileResourcePack:Just Enough Items
+[16:29:27] [Client thread/INFO]: [STDERR]: java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:217)
+	at d.m.<init>(SourceFile:118)
+	at de.maggicraft.ism.ISMMain.a(SourceFile:237)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:643)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:246)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:224)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:147)
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:628)
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:268)
+	at net.minecraft.client.Minecraft.init(Minecraft.java:478)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:387)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+
+[16:29:29] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:29:29] [Thread-12/INFO]: Initializing LWJGL OpenAL
+[16:29:29] [Thread-12/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:29:29] [Thread-12/INFO]: OpenAL initialized.
+[16:29:30] [Sound Library Loader/INFO]: Sound engine started
+[16:29:32] [Client thread/INFO]: Created: 16x16 textures-atlas
+[16:29:33] [Client thread/INFO]: [STDOUT]: ###################################### BIOME ADDED ##########################
+[16:29:33] [Client thread/INFO]: [STDOUT]: DIRT BLOCK >> tile.dirt
+[16:29:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Ninjacraft , FMLFileResourcePack:Example Mod, FMLFileResourcePack:Instant Structures Mod (ISM), FMLFileResourcePack:Just Enough Items
+[16:29:36] [Client thread/INFO]: SoundSystem shutting down[16:29:40] [Client thread/WARN]: Skipping bad option: lastServer:
+[16:29:40] [Client thread/INFO]: LWJGL Version: 2.9.4
+[16:29:41] [Client thread/INFO]: [STDOUT]: ---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 3/6/17 4:29 PM
+Description: Loading screen debug info
+
+This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details -[16:29:43] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+n
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 671016376 bytes (639 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel' Version: '4.4.0 - Build 21.20.16.4565' Renderer: 'Intel(R) HD Graphics 530'
+[16:29:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Ninjacraft , FMLFileResourcePack:Example Mod, FMLFileResourcePack:Instant Structures Mod (ISM), FMLFileResourcePack:Just Enough Items
+[16:29:45] [Client thread/INFO]: [STDERR]: java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:217)
+	at d.m.<init>(SourceFile:118)
+	at de.maggicraft.ism.ISMMain.a(SourceFile:237)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:643)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:246)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:224)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:147)
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:628)
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:268)
+	at net.minecraft.client.Minecraft.init(Minecraft.java:478)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:387)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+
+[16:29:47] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:29:47] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[16:29:47] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:29:47] [Thread-11/INFO]: OpenAL initialized.
+[16:29:47] [Sound Library Loader/INFO]: Sound engine started
+[16:29:49] [Client thread/INFO]: Created: 16x16 textures-atlas
+[16:29:50] [Client thread/INFO]: [STDOUT]: ###################################### BIOME ADDED ##########################
+[16:29:50] [Client thread/INFO]: [STDOUT]: DIRT BLOCK >> tile.dirt
+[16:29:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Ninjacraft , FMLFileResourcePack:Example Mod, FMLFileResourcePack:Instant Structures Mod (ISM), FMLFileResourcePack:Just Enough Items
+[16:29:52] [Client thread/INFO]: SoundSystem shutting down...
+[16:29:52] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[16:29:52] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:29:53] [Thread-13/INFO]: Initializing LWJGL OpenAL
+[16:29:53] [Thread-13/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:29:53] [Thread-13/INFO]: OpenAL initialized.
+[16:29:53] [Sound Library Loader/INFO]: Sound engine started
+[16:29:55] [Client thread/INFO]: Created: 512x512 textures-atlas
+[16:29:56] [Client thread/WARN]: Skipping bad option: lastServer:
+[16:29:57] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[16:30:01] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[16:30:01] [Server thread/INFO]: Generating keypair
+[16:30:01] [Server thread/INFO]: Preparing start region for level 0
+[16:30:02] [Server thread/INFO]: Preparing spawn area: 74%
+[16:30:03] [Server thread/INFO]: Changing view distance to 12, from 10
+[16:30:03] [Server thread/INFO]: Player685[local:E:e39ed8d8] logged in with entity id 347 at (-141.84494711637538, 75.79432857680078, 250.65315922802338)
+[16:30:03] [Server thread/INFO]: Player685 joined the game
+[16:30:04] [Server thread/INFO]: Saving and pausing game...
+[16:30:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:30:04] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:30:04] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:30:04] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@7adbc573[id=4f2b9d55-5b3e-32ee-ad58-c8df44a23337,name=Player685,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3056) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_121]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+[16:30:32] [Server thread/INFO]: Player685 has just earned the achievement [Taking Inventory]
+[16:30:32] [Client thread/INFO]: [CHAT] Player685 has just earned the achievement [Taking Inventory]
+[16:30:34] [Client thread/INFO]: Stopping!
+[16:30:34] [Server thread/INFO]: Stopping server
+[16:30:34] [Server thread/INFO]: Saving players
+[16:30:34] [Server thread/INFO]: Saving worlds
+[16:30:34] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:30:34] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:30:34] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:30:35] [Client thread/INFO]: SoundSystem shutting down...
+[16:30:35] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

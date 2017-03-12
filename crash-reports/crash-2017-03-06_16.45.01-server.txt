@@ -1,0 +1,85 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 3/6/17 4:45 PM
+Description: Exception ticking world
+
+java.lang.NullPointerException: Exception ticking world
+	at de.bitowner.ninjacraft.biomes.DarkBiome.biomeGenTerra(DarkBiome.java:97)
+	at de.bitowner.ninjacraft.biomes.DarkBiome.decorate(DarkBiome.java:62)
+	at net.minecraft.world.gen.ChunkProviderOverworld.populate(ChunkProviderOverworld.java:464)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1069)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1052)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:164)
+	at net.minecraft.server.management.PlayerChunkMapEntry.providePlayerChunk(PlayerChunkMapEntry.java:130)
+	at net.minecraft.server.management.PlayerChunkMap.tick(PlayerChunkMap.java:178)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:229)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:783)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:698)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:547)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at de.bitowner.ninjacraft.biomes.DarkBiome.biomeGenTerra(DarkBiome.java:97)
+	at de.bitowner.ninjacraft.biomes.DarkBiome.decorate(DarkBiome.java:62)
+	at net.minecraft.world.gen.ChunkProviderOverworld.populate(ChunkProviderOverworld.java:464)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1069)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1052)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:164)
+	at net.minecraft.server.management.PlayerChunkMapEntry.providePlayerChunk(PlayerChunkMapEntry.java:130)
+	at net.minecraft.server.management.PlayerChunkMap.tick(PlayerChunkMap.java:178)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:229)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [EntityPlayerMP['Player987'/136, l='New World', x=1111.54, y=113.09, z=1011.85]]
+	Chunk stats: ServerChunkCache: 885 Drop: 0
+	Level seed: -1257431968609114288
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (180,64,439), Chunk: (at 4,4,7 in 11,27; contains blocks 176,0,432 to 191,255,447), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 1473 game time, 1473 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 145692 (now: false), thunder time: 110356 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:783)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:698)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:547)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11.2
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 331652640 bytes (316 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 1, tcache: 1, allocated: 12, tallocated: 94
+	FML: MCP 9.38 Powered by Forge 13.20.0.2228 8 mods loaded, 8 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	minecraft{1.11.2} [Minecraft] (minecraft.jar) 
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.11.2-13.20.0.2228.jar) 
+	UCHIJAAAA	forge{13.20.0.2228} [Minecraft Forge] (forgeSrc-1.11.2-13.20.0.2228.jar) 
+	UCHIJAAAA	ninjacraft{@VERSION@} [Ninjacraft ] (bin) 
+	UCHIJAAAA	examplemod{1.0} [Example Mod] (bin) 
+	UCHIJAAAA	ism{1.5.11 MC-1.1.11} [Instant Structures Mod (ISM)] (ism-1.5.11 MC-1.11.jar) 
+	UCHIJAAAA	jei{4.2.4.226} [Just Enough Items] (jei_1.11.2-4.2.4.226.jar) 
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player987'/136, l='New World', x=1111.54, y=113.09, z=1011.85]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

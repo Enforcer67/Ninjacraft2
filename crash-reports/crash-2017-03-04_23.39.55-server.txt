@@ -1,0 +1,97 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 3/4/17 11:39 PM
+Description: Ticking entity
+
+java.lang.ClassCastException: net.minecraft.entity.item.EntityFallingBlock cannot be cast to net.minecraft.entity.player.EntityPlayer
+	at de.bitowner.ninjacraft.block.FeatherSteel.onLanded(FeatherSteel.java:62)
+	at net.minecraft.entity.Entity.move(Entity.java:1002)
+	at net.minecraft.entity.item.EntityFallingBlock.onUpdate(EntityFallingBlock.java:136)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2108)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:875)
+	at net.minecraft.world.World.updateEntity(World.java:2075)
+	at net.minecraft.world.World.updateEntities(World.java:1888)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:647)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:794)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:698)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:547)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at de.bitowner.ninjacraft.block.FeatherSteel.onLanded(FeatherSteel.java:62)
+	at net.minecraft.entity.Entity.move(Entity.java:1002)
+	at net.minecraft.entity.item.EntityFallingBlock.onUpdate(EntityFallingBlock.java:136)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2108)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:875)
+	at net.minecraft.world.World.updateEntity(World.java:2075)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:falling_block (net.minecraft.entity.item.EntityFallingBlock)
+	Entity ID: 774
+	Entity Name: Falling Block
+	Entity's Exact location: -28.50, 33.00, 169.50
+	Entity's Block location: World: (-29,33,169), Chunk: (at 3,2,9 in -2,10; contains blocks -32,0,160 to -17,255,175), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, -0.46, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+	Immitating block ID: 13
+	Immitating block data: 0
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1888)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:647)
+
+-- Affected level --
+Details:
+	Level name: xxx
+	All players: 1 total; [EntityPlayerMP['Player211'/972, l='xxx', x=-125.50, y=80.00, z=218.50]]
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: 6507959830447678892
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (-118,64,227), Chunk: (at 10,4,3 in -8,14; contains blocks -128,0,224 to -113,255,239), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 15 game time, 15 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 81439 (now: false), thunder time: 52718 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:794)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:698)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:547)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11.2
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 611100944 bytes (582 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 1, tcache: 1, allocated: 12, tallocated: 94
+	FML: MCP 9.38 Powered by Forge 13.20.0.2228 8 mods loaded, 8 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	minecraft{1.11.2} [Minecraft] (minecraft.jar) 
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.11.2-13.20.0.2228.jar) 
+	UCHIJAAAA	forge{13.20.0.2228} [Minecraft Forge] (forgeSrc-1.11.2-13.20.0.2228.jar) 
+	UCHIJAAAA	ninjacraft{@VERSION@} [Ninjacraft ] (bin) 
+	UCHIJAAAA	examplemod{1.0} [Example Mod] (bin) 
+	UCHIJAAAA	ism{1.5.11 MC-1.1.11} [Instant Structures Mod (ISM)] (ism-1.5.11 MC-1.11.jar) 
+	UCHIJAAAA	jei{4.2.4.226} [Just Enough Items] (jei_1.11.2-4.2.4.226.jar) 
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player211'/972, l='xxx', x=-125.50, y=80.00, z=218.50]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
